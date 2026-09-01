@@ -485,5 +485,56 @@
 </dialog>
 
   <script src="../script.js"></script>
+  <script>
+  const waitlistForm = document.getElementById('agenziaWaitlistForm');
+
+  if (waitlistForm) {
+    waitlistForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const emailInput = document.getElementById('agenziaWaitlistEmail');
+      const submitButton = document.getElementById('agenziaWaitlistSubmit');
+      const success = document.getElementById('agenziaWaitlistSuccess');
+      const content = document.getElementById('agenziaWaitlistContent');
+      const error = document.getElementById('agenziaWaitlistError');
+
+      const email = emailInput.value.trim();
+
+      error.hidden = true;
+      submitButton.disabled = true;
+      submitButton.textContent = 'Invio in corso...';
+
+      try {
+        const response = await fetch(
+          'https://app.vverio.com/api/public/agency-waitlist',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              email: email,
+              marketCode: 'IT',
+              source: 'landing_page'
+            })
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error('waitlist_error');
+        }
+
+        content.hidden = true;
+        success.hidden = false;
+
+      } catch (err) {
+        error.hidden = false;
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Avvisami';
+      }
+    });
+  }
+</script>
 </body>
 </html>
