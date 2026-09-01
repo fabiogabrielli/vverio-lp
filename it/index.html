@@ -1,26 +1,411 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VVERIO Italia</title>
-  <meta
-    name="description"
-    content="VVERIO è una piattaforma di Insurance Content Intelligence per professionisti e intermediari assicurativi."
-  >
-   <!-- Tailwind v4 Play CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VVERIO — Insurance Content Intelligence</title>
+  <meta name="description" content="VVERIO aiuta agenti, broker e agenzie assicurative a capire cosa vale la pena comunicare e a trasformarlo in contenuti professionali." />
+  <meta name="theme-color" content="#07163F" />
+  <link rel="canonical" href="https://vverio.com/it/" />
+  <link rel="alternate" hreflang="it" href="https://vverio.com/it/" />
+  <link rel="alternate" hreflang="x-default" href="https://vverio.com/" />
+  <meta property="og:title" content="VVERIO — Insurance Content Intelligence" />
+  <meta property="og:description" content="Dal mercato al contenuto. VVERIO aiuta intermediari assicurativi a comunicare con più autorevolezza, continuità e rilevanza." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-vverio.svg" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-  <main class="flex flex-col items-center justify-center min-h-screen bg-[#07163F]">
-    <img src="../assets/img/logo_negativo.svg" alt="VVERIO Logo" class="w-100 mb-4">
-      <h1 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-    Insurance Content Intelligence per il mercato assicurativo.
-  </h1>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="VVERIO home">
+        <img src="../assets/vverio-logo.svg" alt="VVERIO" width="156" height="38" />
+      </a>
+      <nav class="desktop-nav" aria-label="Navigazione principale">
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#radar">Radar</a>
+        <a href="#inspire">Inspire Me</a>
+        <a href="#pricing">Prezzi</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="login-link" href="https://app.vverio.com/login">Accedi</a>
+        <a class="btn btn-primary btn-sm" href="https://app.vverio.com/signup">Prova gratuitamente</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#radar">Radar</a>
+      <a href="#inspire">Inspire Me</a>
+      <a href="#pricing">Prezzi</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://app.vverio.com/login">Accedi</a>
+      <a class="btn btn-primary" href="https://app.vverio.com/signup">Prova gratuitamente</a>
+    </div>
+  </header>
 
-  <p class="mt-8 text-sm font-semibold uppercase tracking-[0.18em] text-[#22B8D6]">
-    VVERIO sta arrivando in Italia.
-  </p>
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> INSURANCE CONTENT INTELLIGENCE</div>
+          <h1>Fai conoscere il tuo valore.<br><span>Non solo le polizze che vendi.</span></h1>
+          <p class="hero-lead">VVERIO trasforma la tua esperienza assicurativa in una strategia di contenuti professionale, rilevante e coerente con il tuo mercato.</p>
+          <p class="hero-sub">Scopri cosa sta succedendo nel settore, trova nuove opportunità di comunicazione e crea contenuti in pochi minuti.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://app.vverio.com/signup">Prova VVERIO gratuitamente <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost btn-lg" href="#come-funziona">Guarda come funziona</a>
+          </div>
+          <div class="trust-row">
+            <span><i>✓</i> Nessuna carta di credito</span>
+            <span><i>✓</i> Configurazione in pochi minuti</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Anteprima VVERIO">
+          <div class="visual-glow"></div>
+          <div class="app-window">
+            <div class="app-topbar">
+              <div class="app-brand-mini"><img src="../assets/vverio-logo.svg" alt="" /></div>
+              <div class="app-top-actions"><span></span><span></span><span></span></div>
+            </div>
+            <div class="app-body">
+              <aside class="app-sidebar">
+                <div class="side-pill active">Radar</div>
+                <div class="side-pill">Inspire Me</div>
+                <div class="side-pill">Planning</div>
+                <div class="side-pill">Library</div>
+              </aside>
+              <div class="app-content">
+                <div class="mock-title-row">
+                  <div><small>VVERIO RADAR</small><h3>Oggi nel mercato</h3></div>
+                  <span class="live-chip">● LIVE</span>
+                </div>
+                <div class="radar-card featured">
+                  <div class="card-meta"><span class="category">Rischi d'impresa</span><span>Oggi</span></div>
+                  <h4>Nuove opportunità di conversazione sulla protezione delle PMI</h4>
+                  <p>Un tema da monitorare per chi lavora con imprese e professionisti.</p>
+                  <button>Esplora il segnale →</button>
+                </div>
+                <div class="mini-grid">
+                  <div class="radar-card mini"><span class="category">Cyber</span><strong>Nuovi rischi, nuove domande</strong><small>2 ore fa</small></div>
+                  <div class="radar-card mini"><span class="category">Protection</span><strong>Un tema da spiegare ai clienti</strong><small>Oggi</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-one"><span class="float-icon">✦</span><div><small>INSPIRE ME</small><strong>3 idee per il tuo pubblico</strong></div></div>
+          <div class="float-card float-two"><span class="float-icon">DNA</span><div><small>PROFESSIONAL DNA</small><strong>Contenuti coerenti con te</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section section-soft">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="kicker">LA SFIDA</span>
+          <h2>Essere bravi nel proprio lavoro non basta, <span>se nessuno lo vede.</span></h2>
+          <p>Sai quanto valore puoi offrire ai tuoi clienti. Il problema è trovare ogni settimana il tempo, le idee e le parole giuste per comunicarlo.</p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain-card reveal"><div class="num">01</div><h3>Non sai cosa pubblicare</h3><p>Ogni settimana ricomincia la stessa domanda: <strong>“Di cosa parlo oggi?”</strong></p></article>
+          <article class="pain-card reveal"><div class="num">02</div><h3>Non hai tempo</h3><p>Clienti, rinnovi, preventivi e trattative vengono prima dei social. E la comunicazione resta sempre per dopo.</p></article>
+          <article class="pain-card reveal"><div class="num">03</div><h3>È difficile seguire tutto</h3><p>Nuovi rischi, normative, mercato e bisogni dei clienti cambiano continuamente.</p></article>
+          <article class="pain-card reveal"><div class="num">04</div><h3>I contenuti sembrano tutti uguali</h3><p>Un testo generico può riempire un profilo. Ma difficilmente racconta la tua esperienza e il tuo valore.</p></article>
+        </div>
+        <div class="statement reveal">VVERIO nasce per cambiare questo.</div>
+      </div>
+    </section>
+
+    <section class="section transformation">
+      <div class="container split align-center">
+        <div class="section-heading reveal">
+          <span class="kicker">IL RISULTATO</span>
+          <h2>Da intermediario assicurativo a <span>punto di riferimento.</span></h2>
+          <p>Una presenza digitale efficace non significa semplicemente pubblicare di più. Significa sapere <strong>cosa vale la pena comunicare</strong>, trovare il punto di vista giusto e trasformarlo in un contenuto utile per il proprio pubblico.</p>
+          <a class="text-link" href="https://app.vverio.com/signup">Inizia gratuitamente →</a>
+        </div>
+        <div class="benefit-grid reveal">
+          <div class="benefit"><span>↗</span><h3>Più autorevolezza</h3><p>Fai emergere competenza, esperienza e specializzazione.</p></div>
+          <div class="benefit"><span>∞</span><h3>Più continuità</h3><p>Non lasciare più i tuoi canali fermi per settimane.</p></div>
+          <div class="benefit"><span>◎</span><h3>Più rilevanza</h3><p>Parla dei rischi e dei temi che interessano davvero i tuoi clienti.</p></div>
+          <div class="benefit"><span>⌁</span><h3>Meno tempo</h3><p>Riduci ore di ricerca, pianificazione e scrittura a pochi minuti.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intelligence-band">
+      <div class="container center reveal">
+        <span class="kicker light">LA DIFFERENZA VVERIO</span>
+        <h2>Molte AI sanno scrivere.<br><span>VVERIO sa da dove iniziare.</span></h2>
+        <p>Un’AI generica aspetta che tu le dica cosa fare. VVERIO ti aiuta prima a capire cosa sta succedendo nel tuo mercato, cosa può essere rilevante per il tuo posizionamento e quali opportunità possono diventare contenuti. Poi ti aiuta a crearli.</p>
+        <div class="intelligence-label">Questa è <strong>Insurance Content Intelligence.</strong></div>
+      </div>
+    </section>
+
+    <section class="section radar-section" id="radar">
+      <div class="container split radar-layout align-center">
+        <div class="radar-demo reveal">
+          <div class="demo-header"><span>VVERIO RADAR</span><span class="live-chip">● LIVE</span></div>
+          <h3>Segnali che meritano la tua attenzione</h3>
+          <div class="signal-card"><div class="signal-top"><span class="category">Mercato</span><small>Oggi</small></div><strong>Un cambiamento che può aprire nuove conversazioni con le PMI</strong><p>Perché conta: può influenzare come le imprese valutano protezione e continuità operativa.</p><button>Apri il segnale →</button></div>
+          <div class="signal-card compact"><div class="signal-top"><span class="category">Cyber</span><small>Oggi</small></div><strong>Un rischio crescente da tradurre in educazione</strong></div>
+          <div class="signal-card compact"><div class="signal-top"><span class="category">Protection</span><small>Ieri</small></div><strong>Nuove domande che i clienti potrebbero iniziare a fare</strong></div>
+        </div>
+        <div class="section-heading reveal">
+          <span class="kicker">VVERIO RADAR</span>
+          <h2>Guarda il mercato con <span>occhi assicurativi.</span></h2>
+          <p>Ogni giorno succede qualcosa che può influenzare il modo in cui clienti, imprese e professionisti percepiscono il rischio.</p>
+          <p><strong>VVERIO Radar</strong> raccoglie e organizza segnali rilevanti per il settore assicurativo, aiutandoti a capire rapidamente cosa merita la tua attenzione.</p>
+          <div class="not-news">Non una semplice raccolta di notizie.<br><strong>Un radar pensato per chi lavora ogni giorno nel mondo assicurativo.</strong></div>
+          <ul class="check-list">
+            <li>Segui temi rilevanti per il settore</li>
+            <li>Individua nuovi rischi e trend</li>
+            <li>Scopri sviluppi di mercato</li>
+            <li>Trova opportunità di comunicazione</li>
+          </ul>
+          <a class="text-link" href="https://app.vverio.com/signup">Scopri VVERIO Radar →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="inspire">
+      <div class="container split align-center inspire-layout">
+        <div class="section-heading reveal">
+          <span class="kicker">INSPIRE ME</span>
+          <h2>Scopri cosa vale la pena <span>comunicare per te.</span></h2>
+          <p>Non tutte le notizie sono rilevanti per il tuo pubblico. Non tutti i temi sono coerenti con il tuo posizionamento. E non tutte le idee valgono un contenuto.</p>
+          <p><strong>Inspire Me</strong> individua opportunità di comunicazione pensate per il tuo profilo professionale — considerando specializzazioni, prodotti, clienti, posizionamento e temi rilevanti per il mercato.</p>
+          <div class="big-quote">Non una lista di idee.<br><strong>Opportunità già contestualizzate per te.</strong></div>
+          <a class="btn btn-primary" href="https://app.vverio.com/signup">Lasciati ispirare <span>→</span></a>
+        </div>
+        <div class="inspire-demo reveal">
+          <div class="inspire-top"><div><small>INSPIRE ME</small><h3>Opportunità per te</h3></div><span>3 nuove</span></div>
+          <article class="idea-card selected">
+            <div class="idea-meta"><span class="category">PMI · Risk Education</span><small>Alta rilevanza</small></div>
+            <h4>Quanto può costare a una PMI fermarsi per cinque giorni?</h4>
+            <div class="why"><strong>Perché vale la pena parlarne</strong><p>Collega un rischio concreto al valore della continuità operativa, senza partire dal prodotto.</p></div>
+            <div class="angle"><strong>Angolo suggerito</strong><p>Trasforma il tema in una domanda pratica per imprenditori.</p></div>
+            <div class="idea-actions"><button>Salva</button><button class="primary">Crea contenuto →</button></div>
+          </article>
+          <article class="idea-card slim"><span class="category">Cyber</span><strong>3 domande che un’impresa dovrebbe farsi prima di un attacco</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="kicker">DAL SEGNALE AL CONTENUTO</span>
+          <h2>Un flusso che parte dal mercato.<br><span>E arriva alla tua voce.</span></h2>
+        </div>
+        <div class="flow-grid reveal">
+          <div class="flow-card"><span class="flow-icon">◎</span><small>VVERIO RADAR</small><h3>Cosa sta succedendo?</h3><p>Segnali e sviluppi rilevanti del mercato assicurativo.</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-card"><span class="flow-icon">✦</span><small>INSPIRE ME</small><h3>Cosa vale la pena comunicare?</h3><p>Opportunità selezionate per il tuo pubblico e il tuo posizionamento.</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-card"><span class="flow-icon">DNA</span><small>PROFESSIONAL DNA</small><h3>Come posso parlarne?</h3><p>Il punto di vista viene adattato a chi sei professionalmente.</p></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-card"><span class="flow-icon">↗</span><small>VVERIO</small><h3>Trasformalo in contenuto.</h3><p>Post, articolo o script video pronto da personalizzare.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="come-funziona">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="kicker">COME FUNZIONA</span>
+          <h2>Tu conosci le assicurazioni.<br><span>VVERIO ti aiuta a comunicarle.</span></h2>
+          <p>Non devi diventare un esperto di marketing. VVERIO parte dalla tua esperienza professionale per costruire una comunicazione che ti rappresenti.</p>
+        </div>
+        <div class="steps reveal">
+          <div class="step"><span>01</span><h3>Raccontaci chi sei</h3><p>Definisci prodotti, clienti, specializzazioni, differenziali, obiettivi e tono di voce. VVERIO costruisce il tuo Professional DNA.</p></div>
+          <div class="step"><span>02</span><h3>Guarda cosa sta succedendo</h3><p>Con VVERIO Radar segui temi e segnali rilevanti per il settore assicurativo.</p></div>
+          <div class="step"><span>03</span><h3>Scopri nuove opportunità</h3><p>Inspire Me seleziona idee e angoli di comunicazione coerenti con il tuo profilo e il tuo pubblico.</p></div>
+          <div class="step"><span>04</span><h3>Crea</h3><p>Trasforma un’idea in un post, un articolo o uno script video professionale.</p></div>
+          <div class="step"><span>05</span><h3>Adatta e utilizza</h3><p>Modifica il contenuto, adattalo ad altri formati e utilizzalo quando vuoi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dna-section">
+      <div class="container split align-center">
+        <div class="dna-visual reveal">
+          <div class="dna-orbit">
+            <div class="dna-center"><img src="../assets/vverio-icon.svg" alt="" /><strong>Professional<br>DNA</strong></div>
+            <span class="orbit-tag tag-1">Specializzazioni</span>
+            <span class="orbit-tag tag-2">Clienti</span>
+            <span class="orbit-tag tag-3">Prodotti</span>
+            <span class="orbit-tag tag-4">Obiettivi</span>
+            <span class="orbit-tag tag-5">Tono di voce</span>
+            <span class="orbit-tag tag-6">Posizionamento</span>
+          </div>
+        </div>
+        <div class="section-heading reveal">
+          <span class="kicker">PROFESSIONAL DNA</span>
+          <h2>I tuoi contenuti dovrebbero <span>assomigliare a te.</span></h2>
+          <p>Non a quelli di tutti gli altri intermediari.</p>
+          <p>Per questo VVERIO costruisce il tuo <strong>Professional DNA</strong>: una base strategica che tiene conto di specializzazioni, prodotti, clienti, esperienza, differenziali, obiettivi, posizionamento e tono di voce.</p>
+          <p>VVERIO utilizza queste informazioni ogni volta che ti aiuta a pianificare, trovare nuove idee o creare un contenuto.</p>
+          <div class="big-quote"><strong>Meno contenuti generici.</strong><br>Più contenuti coerenti con il professionista che sei.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section example-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="kicker">UN ESEMPIO</span>
+          <h2>Da un tema assicurativo a un <span>contenuto pronto.</span></h2>
+        </div>
+        <div class="example-flow reveal">
+          <div class="example-card"><small>VVERIO RADAR</small><h3>Rischi catastrofali e imprese</h3><p>Un tema rilevante sta generando nuove domande tra imprese e professionisti.</p></div>
+          <div class="example-connector">↓</div>
+          <div class="example-card"><small>INSPIRE ME</small><h3>Opportunità di contenuto</h3><p>Aiuta le PMI a capire quali domande dovrebbero fare prima di valutare la propria protezione contro eventi catastrofali.</p></div>
+          <div class="example-connector">↓</div>
+          <div class="example-card"><small>PROFESSIONAL DNA</small><h3>Il tuo punto di vista</h3><p>VVERIO adatta l’angolo al tuo pubblico, alle tue specializzazioni e al tuo stile professionale.</p></div>
+          <div class="example-connector">↓</div>
+          <div class="content-preview"><small>CONTENUTO</small><h3>La tua impresa è davvero preparata a un evento catastrofale?</h3><p>Un’alluvione, un terremoto o una frana possono fermare un’attività in poche ore. Ma proteggere un’impresa non significa semplicemente scegliere una polizza...</p><div class="preview-footer"><span>Post LinkedIn</span><button>Apri nell'editor →</button></div></div>
+        </div>
+        <div class="center cta-under"><a class="btn btn-primary btn-lg" href="https://app.vverio.com/signup">Prova VVERIO gratuitamente →</a></div>
+      </div>
+    </section>
+
+    <section class="section section-soft audience-section">
+      <div class="container">
+        <div class="section-heading center reveal"><span class="kicker">PER CHI È VVERIO</span><h2>Costruita per chi vive ogni giorno <span>il mondo assicurativo.</span></h2></div>
+        <div class="audience-grid">
+          <article class="audience-card reveal"><span>01</span><h3>Agenti assicurativi</h3><p>Costruisci una presenza professionale più forte e mantieni viva la relazione con clienti, prospect e territorio.</p></article>
+          <article class="audience-card reveal"><span>02</span><h3>Broker assicurativi</h3><p>Comunica rischi complessi, specializzazioni e competenze con maggiore chiarezza e autorevolezza.</p></article>
+          <article class="audience-card reveal"><span>03</span><h3>Agenzie assicurative</h3><p>Gestisci la comunicazione di più professionisti mantenendo strategia, qualità e coerenza.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section platform-section">
+      <div class="container">
+        <div class="section-heading center reveal"><span class="kicker">UNA SOLA PIATTAFORMA</span><h2>Tutto ciò che serve per una comunicazione <span>più intelligente.</span></h2></div>
+        <div class="feature-grid">
+          <article class="feature-card featured reveal"><div class="feature-icon">◎</div><h3>VVERIO Radar</h3><p>Segui temi, segnali e sviluppi rilevanti per il mercato assicurativo.</p></article>
+          <article class="feature-card featured reveal"><div class="feature-icon">✦</div><h3>Inspire Me</h3><p>Ricevi opportunità di contenuto personalizzate per il tuo profilo.</p></article>
+          <article class="feature-card featured reveal"><div class="feature-icon">DNA</div><h3>Professional DNA</h3><p>Costruisci la base strategica che rappresenta chi sei e come vuoi comunicare.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">▦</div><h3>Planning</h3><p>Organizza temi, obiettivi e contenuti.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">✎</div><h3>Post & Script</h3><p>Crea contenuti per presenza, relazione e autorevolezza.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">A</div><h3>Articoli</h3><p>Approfondisci un tema e valorizza la tua esperienza professionale.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">⌁</div><h3>Smart Editor</h3><p>Rivedi, modifica e perfeziona i tuoi contenuti.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">↻</div><h3>Adapt Content</h3><p>Trasforma un contenuto esistente in nuovi formati.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">▤</div><h3>Library & Calendar</h3><p>Mantieni idee e contenuti organizzati e sempre disponibili.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compare-section section-soft">
+      <div class="container split compare-layout align-center">
+        <div class="section-heading reveal"><span class="kicker">PRIMA / DOPO</span><h2>Comunicare dovrebbe essere <span>più semplice.</span></h2><p>VVERIO riduce il lavoro invisibile che viene prima di ogni contenuto: cercare, capire, scegliere, scrivere e adattare.</p></div>
+        <div class="compare-card reveal">
+          <div class="compare-head"><span>Senza VVERIO</span><span>Con VVERIO</span></div>
+          <div class="compare-row"><span>“Cosa pubblico oggi?”</span><strong>Opportunità da cui partire</strong></div>
+          <div class="compare-row"><span>Cercare ogni giorno nuovi temi</span><strong>VVERIO Radar</strong></div>
+          <div class="compare-row"><span>Idee generiche</span><strong>Inspire Me</strong></div>
+          <div class="compare-row"><span>Prompt improvvisati</span><strong>Professional DNA</strong></div>
+          <div class="compare-row"><span>Ore per creare un contenuto</span><strong>Contenuti in pochi minuti</strong></div>
+          <div class="compare-row"><span>AI generica</span><strong>Insurance Content Intelligence</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section time-section">
+      <div class="container center reveal">
+        <span class="kicker">IL TUO TEMPO</span>
+        <h2>Il tuo tempo vale <span>più di un post.</span></h2>
+        <p>Il vero costo della comunicazione non è soltanto scrivere. È cercare. Leggere. Capire cosa è rilevante. Trovare un punto di vista. Decidere cosa pubblicare. Scrivere. Riscrivere. Adattare. E ricominciare la settimana successiva.</p>
+        <div class="time-statement"><strong>Tu dedica il tuo tempo ai clienti.</strong><br>VVERIO ti aiuta a mantenere viva la tua presenza digitale.</div>
+      </div>
+    </section>
+
+    <section class="section pricing-section section-soft" id="pricing">
+      <div class="container">
+        <div class="section-heading center reveal"><span class="kicker">PREZZI</span><h2>Scegli il piano <span>più adatto a te.</span></h2><p>Inizia senza carta di credito. Scegli il piano che rispecchia il modo in cui lavori.</p></div>
+        <div class="pricing-grid reveal">
+          <article class="price-card">
+            <div class="price-top"><span class="plan-label">PROFESSIONAL</span><h3>Per agenti e broker</h3><p>Per costruire e gestire in autonomia la propria presenza professionale.</p></div>
+            <div class="price"><span>€</span><strong>39</strong><small>/ mese</small></div>
+            <a class="btn btn-outline full" href="https://app.vverio.com/signup">Prova gratuitamente</a>
+            <ul>
+              <li>1 Professional DNA</li>
+              <li>VVERIO Radar</li>
+              <li>Inspire Me</li>
+              <li>Pianificazione dei contenuti</li>
+              <li>Post, script video e articoli</li>
+              <li>Smart Editor & Adapt Content</li>
+              <li>Library & Calendar</li>
+            </ul>
+            <div class="price-note">Nessuna carta di credito · Cancella quando vuoi</div>
+          </article>
+          <article class="price-card highlighted">
+            <div class="popular">PER TEAM E AGENZIE</div>
+            <div class="price-top"><span class="plan-label">AGENZIA</span><h3>Per agenzie assicurative</h3><p>Per team che gestiscono più professionisti e più profili.</p></div>
+            <div class="price"><span>€</span><strong>119</strong><small>/ mese</small></div>
+            <a class="btn btn-primary full" href="https://app.vverio.com/signup">Prova VVERIO Agenzia</a>
+            <ul>
+              <li>Tutto il piano Professional</li>
+              <li>Fino a 5 Professional DNA</li>
+              <li>Gestione multi-profilo</li>
+              <li>Utenti del team</li>
+              <li>Maggiori volumi di contenuto</li>
+              <li>Collaborazione e permessi</li>
+            </ul>
+            <div class="price-note">Una sola piattaforma per il tuo team</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-wrap">
+        <div class="section-heading reveal"><span class="kicker">FAQ</span><h2>Domande <span>frequenti.</span></h2><p>Tutto ciò che devi sapere prima di iniziare.</p></div>
+        <div class="faq-list reveal">
+          <details open><summary>Devo essere esperto di marketing per usare VVERIO?</summary><p>No. VVERIO è pensata per professionisti assicurativi che vogliono comunicare meglio senza dover diventare esperti di marketing, copywriting o intelligenza artificiale.</p></details>
+          <details><summary>VVERIO è semplicemente un generatore di contenuti con AI?</summary><p>No. La generazione è solo una parte della piattaforma. VVERIO combina intelligence di mercato, opportunità di comunicazione, Professional DNA, pianificazione e strumenti di creazione in un unico ambiente pensato per il settore assicurativo.</p></details>
+          <details><summary>Qual è la differenza tra VVERIO Radar e Inspire Me?</summary><p>VVERIO Radar ti aiuta a seguire ciò che sta succedendo nel mercato assicurativo. Inspire Me utilizza il tuo profilo professionale per individuare opportunità di comunicazione più rilevanti per te, il tuo pubblico e le tue specializzazioni.</p></details>
+          <details><summary>Cos’è il Professional DNA?</summary><p>È il profilo strategico che permette a VVERIO di comprendere meglio chi sei professionalmente: specializzazioni, prodotti, clienti, differenziali, obiettivi e stile di comunicazione.</p></details>
+          <details><summary>I contenuti sono uguali per tutti?</summary><p>No. VVERIO utilizza il Professional DNA e il contesto di ogni professionista per rendere pianificazione, idee e contenuti più coerenti con il suo profilo.</p></details>
+          <details><summary>Posso modificare i contenuti?</summary><p>Sì. Ogni contenuto può essere rivisto, modificato e personalizzato prima di essere utilizzato. La decisione finale rimane sempre tua.</p></details>
+          <details><summary>VVERIO è adatta anche ai broker B2B?</summary><p>Sì. VVERIO può essere utilizzata sia da intermediari che lavorano con privati sia da professionisti specializzati in imprese, PMI e rischi complessi.</p></details>
+          <details><summary>Serve una carta di credito per provare VVERIO?</summary><p>No. Puoi iniziare la prova senza inserire i dati della carta di credito.</p></details>
+          <details><summary>Posso cancellare l’abbonamento?</summary><p>Sì. Puoi cancellare il tuo abbonamento quando vuoi.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container final-box reveal">
+        <img src="../assets/vverio-icon-light.svg" alt="" width="56" height="56" />
+        <h2>La tua competenza è già il tuo vantaggio.<br><span>È il momento di comunicarla.</span></h2>
+        <p>Scopri cosa sta succedendo. Trova ciò che vale la pena raccontare. Trasforma la tua esperienza assicurativa in contenuti professionali.</p>
+        <div class="final-chain"><span>Radar</span><i>•</i><span>Idee</span><i>•</i><span>Strategia</span><i>•</i><span>Contenuti</span></div>
+        <a class="btn btn-white btn-lg" href="https://app.vverio.com/signup">Prova VVERIO gratuitamente <span>→</span></a>
+        <small>Nessuna carta di credito · Configurazione in pochi minuti</small>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="../assets/vverio-logo-light.svg" alt="VVERIO" width="150" /><p>Insurance Content Intelligence for Insurance Professionals.</p></div>
+      <div class="footer-links"><a href="#come-funziona">Come funziona</a><a href="#radar">Radar</a><a href="#inspire">Inspire Me</a><a href="#pricing">Prezzi</a><a href="#faq">FAQ</a></div>
+      <div class="footer-links"><a href="https://app.vverio.com/login">Accedi</a><a href="#">Privacy Policy</a><a href="#">Termini e Condizioni</a><a href="#">Cookie Policy</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 VVERIO. Tutti i diritti riservati.</span><span>Insurance Content Intelligence</span></div>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
